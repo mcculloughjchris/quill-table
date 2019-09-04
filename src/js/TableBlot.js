@@ -11,6 +11,10 @@ class Table extends ContainBlot {
         let tagName = 'table';
         let node = super.create(tagName);
         node.setAttribute('table_id', value);
+        node.setAttribute('width', '100%')
+        node.setAttribute('cellpadding', '0')
+        node.setAttribute('cellspacing', '0')
+        node.setAttribute('border', '0')
 
         return node;
     }
